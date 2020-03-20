@@ -1,6 +1,7 @@
 package ABC.algorithm;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
@@ -105,6 +106,7 @@ public class ABCNormal implements ABCIface {
 	 */
 	private FoodSource keepBest(FoodSource bestFoodSource, List<FoodSource> foodSources) {
 		// TODO Auto-generated method stub
+		Collections.sort(foodSources);
 		FoodSource currBest = foodSources.get(foodSources.size() - 1);
 		if (currBest.getFoodAmount() > bestFoodSource.getFoodAmount()) {
 			bestFoodSource.setFoodAmount(currBest.getFoodAmount());
