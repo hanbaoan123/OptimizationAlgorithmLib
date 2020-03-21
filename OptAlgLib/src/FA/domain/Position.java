@@ -23,8 +23,10 @@ public class Position {
 		this.dimension = dimension;
 		this.range = range;
 		positionCode = new double[this.dimension];
-		for (int i = 0; i < dimension; i++) {
-			positionCode[i] = range.getLow()[i] + (range.getHigh()[i] - range.getLow()[i]) * Math.random();
+		if (range != null) {
+			for (int i = 0; i < dimension; i++) {
+				positionCode[i] = range.getLow()[i] + (range.getHigh()[i] - range.getLow()[i]) * Math.random();
+			}
 		}
 	}
 
