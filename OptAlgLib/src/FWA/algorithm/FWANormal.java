@@ -1,13 +1,11 @@
 package FWA.algorithm;
 
-import java.nio.channels.SelectionKey;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-import ABC.domain.FoodSource;
 import Common.ObjectiveFun;
 import FA.domain.Position;
 import FWA.domian.Firework;
@@ -15,7 +13,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-
+/**
+ * —Ãª®À„∑®
+ * @author hba
+ *
+ */
 @Builder
 @AllArgsConstructor
 @Setter
