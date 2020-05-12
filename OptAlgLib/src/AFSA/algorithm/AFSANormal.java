@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 import ABC.domain.FoodSource;
 import AFSA.domain.Fish;
 import Common.ObjectiveFun;
-import FA.domain.Position;
+import Common.Position;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

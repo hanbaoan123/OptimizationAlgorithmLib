@@ -52,6 +52,9 @@ public class ObjectiveFun {
 				+ Math.pow(Math.E, -Math.pow(positionCode[0] + 4, 2) - Math.pow(positionCode[1] - 4, 2))
 				+ 2 * Math.pow(Math.E, -Math.pow(positionCode[0], 2) - Math.pow(positionCode[1] + 4, 2))
 				+ 2 * Math.pow(Math.E, -Math.pow(positionCode[0], 2) - Math.pow(positionCode[1], 2));
+		if (Direction == Max) {
+			value *= -1;
+		}
 		return value;
 
 	}

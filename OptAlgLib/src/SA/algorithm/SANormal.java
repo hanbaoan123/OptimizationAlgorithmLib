@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 import Common.ObjectiveFun;
-import FA.domain.Position;
+import Common.Position;
 import SA.domain.Substance;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

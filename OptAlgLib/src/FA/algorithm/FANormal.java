@@ -7,8 +7,8 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 import Common.ObjectiveFun;
+import Common.Position;
 import FA.domain.Firefly;
-import FA.domain.Position;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,8 +1,6 @@
-package FA.domain;
+package Common;
 
 import java.util.stream.IntStream;
-
-import Common.Range;
 
 public class Position {
 	/**

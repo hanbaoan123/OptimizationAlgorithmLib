@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 import ABC.domain.FoodSource;
 import Common.ObjectiveFun;
+import Common.Position;
 import Common.Range;
-import FA.domain.Position;
 import HS.domain.Composition;
 import HS.domain.Harmony;
 import lombok.AllArgsConstructor;

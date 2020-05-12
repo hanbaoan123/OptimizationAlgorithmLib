@@ -4,6 +4,7 @@ package FA.domain;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
+import Common.Position;
 import lombok.Getter;
 import lombok.Setter;
 

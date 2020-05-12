@@ -2,8 +2,8 @@ package ABC.domain;
 
 import java.util.Arrays;
 
+import Common.Position;
 import FA.domain.Firefly;
-import FA.domain.Position;
 import lombok.Getter;
 import lombok.Setter;
 

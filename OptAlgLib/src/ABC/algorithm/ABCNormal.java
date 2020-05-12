@@ -8,9 +8,9 @@ import java.util.stream.IntStream;
 
 import ABC.domain.FoodSource;
 import Common.ObjectiveFun;
+import Common.Position;
 import ES.domain.Code;
 import ES.domain.Individual;
-import FA.domain.Position;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

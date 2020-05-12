@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 import Common.ObjectiveFun;
-import FA.domain.Position;
+import Common.Position;
 import FWA.domian.Firework;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

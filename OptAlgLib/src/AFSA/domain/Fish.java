@@ -2,7 +2,7 @@ package AFSA.domain;
 
 import java.util.Arrays;
 
-import FA.domain.Position;
+import Common.Position;
 import lombok.Getter;
 import lombok.Setter;
 
