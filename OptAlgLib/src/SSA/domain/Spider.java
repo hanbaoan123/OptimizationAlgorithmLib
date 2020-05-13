@@ -28,11 +28,11 @@ public class Spider implements Comparable {
 	/**
 	 * 目标振动
 	 */
-	private double targeVibration = 0;
+	private double targetVibration = 0;
 	/**
 	 * 目标位置
 	 */
-	private double[] targePosition;
+	private double[] targetPosition;
 	/**
 	 * 振动
 	 */
@@ -42,9 +42,9 @@ public class Spider implements Comparable {
 	 */
 	private int cs;
 	/**
-	 * 上一次的位置
+	 * 上一次的移动量
 	 */
-	private double[] lastPosition;
+	private double[] movenment;
 	/**
 	 * 引导移动的维度掩码
 	 */
@@ -53,8 +53,9 @@ public class Spider implements Comparable {
 	public Spider(Position position) {
 		super();
 		this.position = position;
+		this.targetPosition = position.getPositionCode();
 		this.mask = new int[position.getDimension()];
-		this.lastPosition = new double[position.getDimension()];
+		this.movenment = new double[position.getDimension()];
 	}
 
 	@Override
