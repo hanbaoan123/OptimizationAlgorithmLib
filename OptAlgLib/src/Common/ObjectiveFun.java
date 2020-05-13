@@ -6,8 +6,8 @@ public class ObjectiveFun {
 	/**
 	 * 自变量取值范围
 	 */
-	private Range range;
-	private int Direction = Max;
+	protected Range range;
+	protected int Direction = Max;
 
 	public ObjectiveFun() {
 		super();
@@ -52,8 +52,9 @@ public class ObjectiveFun {
 				+ Math.pow(Math.E, -Math.pow(positionCode[0] + 4, 2) - Math.pow(positionCode[1] - 4, 2))
 				+ 2 * Math.pow(Math.E, -Math.pow(positionCode[0], 2) - Math.pow(positionCode[1] + 4, 2))
 				+ 2 * Math.pow(Math.E, -Math.pow(positionCode[0], 2) - Math.pow(positionCode[1], 2));
-		if (Direction == Max) {
-			value *= -1;
+		value = Math.pow(positionCode[0], 2) + Math.pow(positionCode[1], 2);
+		if (Direction == Min) {
+			// value *= -1;
 		}
 		return value;
 
