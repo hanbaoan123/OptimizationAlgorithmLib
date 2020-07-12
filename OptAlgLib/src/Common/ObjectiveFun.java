@@ -1,7 +1,7 @@
 package Common;
 
 public class ObjectiveFun {
-	public static final int Max = 0;
+	public static final int Max = -1;
 	public static final int Min = 1;
 	/**
 	 * 自变量取值范围

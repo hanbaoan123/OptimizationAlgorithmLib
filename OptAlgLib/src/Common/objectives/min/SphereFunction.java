@@ -17,7 +17,7 @@ import Common.Range;
 public class SphereFunction extends ObjectiveFun {
 
 	public SphereFunction() {
-		int dim = 30;
+		int dim = 10;
 		double[] high = new double[dim];
 		double[] low = new double[dim];
 		for (int i = 0; i < dim; i++) {
@@ -25,6 +25,7 @@ public class SphereFunction extends ObjectiveFun {
 			high[i] = 5.12;
 		}
 		this.range = new Range(dim, high, low);
+		this.Direction = this.Min;
 	}
 
 	public SphereFunction(Range range) {

@@ -1,5 +1,6 @@
 package Common;
 
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 
 import lombok.Value;
@@ -67,5 +68,19 @@ public class Range {
 
 	public void setScale(double[] scale) {
 		this.scale = scale;
+	}
+
+	public double[] bounds(double[] pos) {
+		// TODO Auto-generated method stub
+		double[] newPos = pos;
+		pos = IntStream.range(0, dim).mapToDouble(d -> {
+			if (newPos[d] > high[d]) {
+				newPos[d] = high[d];
+			} else if (newPos[d] < low[d]) {
+				newPos[d] = low[d];
+			}
+			return newPos[d];
+		}).toArray();
+		return newPos;
 	}
 }
